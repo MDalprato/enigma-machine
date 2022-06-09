@@ -25,8 +25,10 @@ def decipher_message(msg, attempt):
                 newLetter = element
             output.append(newLetter)
         print("Attempt: " + str(i) + ", value: " + outputMsg.join(output))
+    answerIndex = input("Insert index of valid text ... ");
+    print("The shift value was equal to = " + answerIndex)
 
 
 secret_message = "QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD !"
 # this is how deep will be the attempt in order to decipher the message
-decipher_message(secret_message, 10)
+decipher_message(secret_message, 10);
