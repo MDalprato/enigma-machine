@@ -3,7 +3,7 @@
 
 import array as arr
 
-message = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
+message = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG !"
 LETTERS_LIST = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
                 "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 output = []
@@ -11,7 +11,7 @@ outputMsg = ''
 
 # Iterate over the string
 for element in message:
-    if(element != ' '):
+    if (element in LETTERS_LIST):
         currentIndex = LETTERS_LIST.index(element.upper());
         shiftedIndex = currentIndex - 3;
         lenghtOfLetters = len(LETTERS_LIST);
@@ -19,7 +19,7 @@ for element in message:
             shiftedIndex = shiftedIndex - lenghtOfLetters;
         newLetter = LETTERS_LIST[shiftedIndex];
     else:
-        newLetter = ' ';
+        newLetter = element;
     output.append(newLetter)
 
 print("Cipher message =  " + outputMsg.join(output))
