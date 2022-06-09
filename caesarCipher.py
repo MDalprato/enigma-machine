@@ -1,4 +1,6 @@
 # Basic caesar cipher
+# info here https://en.wikipedia.org/wiki/Caesar_cipher
+
 import array as arr
 
 message = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"
