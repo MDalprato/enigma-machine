@@ -6,7 +6,7 @@ secret_message = "QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD !"
 LETTERS_LIST = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
                 "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 
-max_shift_attampt = 4; # this is how deep will be the attempt in order to decipher the message
+max_shift_attampt = 10; # this is how deep will be the attempt in order to decipher the message
 
 # Iterate over the string
 
