@@ -7,17 +7,21 @@ LETTERS_LIST = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
 output = []
 outputMsg = ''
 
-# Iterate over the string
-for element in message:
-    if (element in LETTERS_LIST):
-        currentIndex = LETTERS_LIST.index(element.upper());
-        shiftedIndex = currentIndex - 3;
-        lenghtOfLetters = len(LETTERS_LIST);
-        if(shiftedIndex > lenghtOfLetters):
-            shiftedIndex = shiftedIndex - lenghtOfLetters;
-        newLetter = LETTERS_LIST[shiftedIndex];
-    else:
-        newLetter = element;
-    output.append(newLetter)
+# This is the cypher code
+def cipher_message(msg):
+    lenghtOfLetters = len(LETTERS_LIST);
+    # Iterate over the string
+    for element in msg:
+        if (element in LETTERS_LIST):
+            currentIndex = LETTERS_LIST.index(element.upper());
+            shiftedIndex = currentIndex - 3;
+            if(shiftedIndex > lenghtOfLetters):
+                shiftedIndex = shiftedIndex - lenghtOfLetters;
+            newLetter = LETTERS_LIST[shiftedIndex];
+        else:
+            newLetter = element;
+        output.append(newLetter)
+    print("Cipher message =  " + outputMsg.join(output))
+#end of the cypher code
 
-print("Cipher message =  " + outputMsg.join(output))
+cipher_message(message);
