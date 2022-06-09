@@ -11,13 +11,7 @@ outputMsg = ''
 
 # Iterate over the string
 for element in message:
-
-    isSpace = False
-
-    if(element == ' '):
-        isSpace = True
-
-    if(isSpace == False):
+    if(element != ' '):
         currentIndex = LETTERS_LIST.index(element.upper());
         shiftedIndex = currentIndex - 3;
         lenghtOfLetters = len(LETTERS_LIST);
@@ -26,7 +20,6 @@ for element in message:
         newLetter = LETTERS_LIST[shiftedIndex];
     else:
         newLetter = ' ';
-
     output.append(newLetter)
 
 print("Cipher message =  " + outputMsg.join(output))
