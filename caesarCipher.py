@@ -18,11 +18,11 @@ for element in message:
         isSpace = True
 
     if(isSpace == False):
-        currentIndex = LETTERS_LIST.index(element.upper())
-        shiftedIndex = currentIndex - 3
-        lenghtOfLetters = len(LETTERS_LIST)
+        currentIndex = LETTERS_LIST.index(element.upper());
+        shiftedIndex = currentIndex - 3;
+        lenghtOfLetters = len(LETTERS_LIST);
         if(shiftedIndex > lenghtOfLetters):
-            shiftedIndex = shiftedIndex - lenghtOfLetters
+            shiftedIndex = shiftedIndex - lenghtOfLetters;
         newLetter = LETTERS_LIST[shiftedIndex];
     else:
         newLetter = ' ';
