@@ -1,7 +1,8 @@
 # Basic caesar cipher
 # info here https://en.wikipedia.org/wiki/Caesar_cipher
 
-message = "THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG !"
+
+message = "QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD !"
 LETTERS_LIST = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
                 "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 output = []
