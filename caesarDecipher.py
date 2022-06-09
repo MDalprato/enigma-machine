@@ -11,7 +11,6 @@ max_shift_attampt = 4; # this is how deep will be the attempt in order to deciph
 # Iterate over the string
 
 for i in range(max_shift_attampt):
-
   output = [];
   outputMsg = '';
   for element in secret_message:
@@ -25,5 +24,5 @@ for i in range(max_shift_attampt):
       else:
           newLetter = element;
       output.append(newLetter)
-      print("Cipher secret_message =  " + outputMsg.join(output))
+  print("Cipher secret_message =  " + outputMsg.join(output))
 
