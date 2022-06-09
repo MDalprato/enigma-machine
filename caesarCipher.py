@@ -3,7 +3,8 @@
 
 message = "PROSSIMO attacco posizione 44.281525888115794, 11.900987295767901"
 LETTERS_LIST = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L",
-                "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+                "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z",
+                "0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 output = []
 outputMsg = ''
 
